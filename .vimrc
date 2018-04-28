@@ -1,4 +1,4 @@
-syntax on                                                                                                                                                                                                                                                                                                                     
+syntax on
 set expandtab "タブ入力を複数の空白入力に置き換える
 set tabstop=2 "画面上でタブ文字が占める幅
 set shiftwidth=2 "自動インデントでずれる幅
@@ -9,34 +9,34 @@ set cursorline "行もカーソル位置を表示
 
 " デフォルトでツリーを表示させる
 autocmd VimEnter * execute ':NERDTreeTabsOpen'
-autocmd VimEnter * wincmd l    
+autocmd VimEnter * wincmd l
 
 " 隠しファイルを表示させる
-let NERDTreeShowHidden = 1     
+let NERDTreeShowHidden = 1
 let g:NERDTreeShowBookmarks=1
 
 "次のタブへ移動
 noremap <C-Right> gt
 
-" 前のタブへ移動               
-noremap <C-Left> gT            
+" 前のタブへ移動
+noremap <C-Left> gT
 
 " ウィンドウの移動
 noremap sw <C-w>w
 
-" 新しいタブ                   
-noremap tn :<C-u>tabnew<CR>    
+" 新しいタブ
+noremap tn :<C-u>tabnew<CR>
 
 " バッファ一覧
 noremap <S-b> :Unite buffer<CR>
 
-" ファイル一覧                 
+" ファイル一覧
 noremap <S-f> :Unite -buffer-name=file file<CR>
 
-" 最近使ったファイルの一覧     
+" 最近使ったファイルの一覧
 noremap <S-h> :Unite file_mru<CR>
 
-" Tree形式で表示               
+" Tree形式で表示
 noremap <C-t> :NERDTreeTabsToggle<CR>
 
 "NeoBundle Scripts-----------------------------
@@ -45,10 +45,10 @@ if &compatible
 endif
 
 " Required:
-set runtimepath+=/root/.vim/bundle/neobundle.vim/
+set runtimepath+=/Users/atsushi-fukuda/.vim/bundle/neobundle.vim/
 
 " Required:
-call neobundle#begin(expand('/root/.vim/bundle'))
+call neobundle#begin(expand('/Users/atsushi-fukuda/.vim/bundle'))
 
 " Let NeoBundle manage NeoBundle
 " Required:
