@@ -7,6 +7,8 @@ set autoindent "改行時に前の行のインデントを継続する
 set smartindent "改行時に入力された行の末尾に合わせて次の行のインデントを増減する
 set cursorline "行もカーソル位置を表示
 
+hi MatchParen term=standout ctermbg=DarkGrey ctermfg=Black guibg=DarkGrey guifg=Black
+
 " デフォルトでツリーを表示させる
 autocmd VimEnter * execute ':NERDTreeTabsOpen'
 autocmd VimEnter * wincmd l
